@@ -1,0 +1,32 @@
+{
+  "name": "is-dark-color",
+  "version": "1.0.1",
+  "description": "Detects if a hex color is dark or light. It is based on the w3 documentation for color luminance: https://www.w3.org/TR/WCAG20/#relativeluminancedef",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --presets babel-preset-es2015 --plugins add-module-exports --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gion/is-dark-color.git"
+  },
+  "keywords": [
+    "color",
+    "luminance",
+    "dark",
+    "light"
+  ],
+  "author": "Gion <bogdan.gradinariu@gmail.com> (https://github.com/gion)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gion/is-dark-color/issues"
+  },
+  "homepage": "https://github.com/gion/is-dark-color#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
