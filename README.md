@@ -2,6 +2,8 @@
 Detects if a hex color is dark or light. It is based on the w3 documentation for color luminance: https://www.w3.org/TR/WCAG20/#relativeluminancedef.
 
 Useful when trying to make the text color visible on certain background colors.
+This is why I needed this: ![this is why I needed this](https://media.giphy.com/media/5wFScs9NRRffxzPI2l/giphy.gif "This is why I needed this")
+
 
 ## Installation
 `npm i -S is-dark-color`
