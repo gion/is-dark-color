@@ -1,6 +1,6 @@
 {
   "name": "is-dark-color",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Detects if a hex color is dark or light. It is based on the w3 documentation for color luminance: https://www.w3.org/TR/WCAG20/#relativeluminancedef",
   "main": "dist/index.js",
   "scripts": {
