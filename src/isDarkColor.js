@@ -1,7 +1,14 @@
 import { hexToRgb } from './hexToRgb'
 
 // adapted from https://stackoverflow.com/a/3943023/491075
-export const isDarkColor = hexColor => {
+export const isDarkColor = (hexColor, options) => {
+  if (options && options.override) {
+    const overridedColor = Object.keys(options.override).find(k => k.toLowerCase() === hexColor.toLowerCase())
+    if (overridedColor !== undefined) {
+      return options.override[overridedColor]
+    }
+  }
+
   const { r, g, b } = hexToRgb(hexColor)
 
   let colorArray = [r / 255, g / 255, b / 255].map(v => {
