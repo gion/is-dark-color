@@ -37,4 +37,22 @@ describe('isDarkColor', function() {
     });
 
   });
+
+  describe('testing overrides', function() {
+    it('should return true for overriden white', function() {
+      var color = '#ffffff'
+      var result = isDarkColor(color, {override: {[color]: true}});
+      var expectedResult = true
+
+      expect(result).to.equal(expectedResult)
+    })
+
+    it('should return false for overriden black', function() {
+      var color = '#000000'
+      var result = isDarkColor(color, {override: {[color]: false}});
+      var expectedResult = false
+
+      expect(result).to.equal(expectedResult)
+    })
+  })
 });

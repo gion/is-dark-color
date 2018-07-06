@@ -23,6 +23,21 @@ const someColor = '#ff9900' // some sort of orange
 console.log(isDarkColor(someColor)) // try it to find out
 ```
 
+Optionally, you can override the return value for certain colors:
+```javascript
+import isDarkColor from 'is-dark-color'
+
+const options = {
+  override: {
+    '#319FB5': true,
+    '#383939': false,
+  }
+}
+
+isDarkColor('#319FB5') // false
+isDarkColor('#319FB5', options) // true
+```
+
 ## Credits
 Inspired from
  - https://stackoverflow.com/a/3943023/491075
