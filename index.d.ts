@@ -5,6 +5,6 @@ declare module 'is-dark-color' {
 
   export default function isDarkColor(
     hexColor: string,
-    options: isDarkColorOptions
+    options?: isDarkColorOptions
   ): boolean;
 }
